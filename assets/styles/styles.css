@@ -1,0 +1,124 @@
+/* Universal Selector */
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Removes list styles (bullets/numbers) */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Button */
+.btn {
+    color: #fff;
+    background-color: #645cff;
+    border: transparent;
+    border-radius: 0.25rem;
+    letter-spacing: 1px;
+    padding: 0.375rem 0.75rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    display: inline-block;
+    transition: 0.3s ease-in-out all;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3c3799;
+}
+
+/* Navbar */
+nav {
+    background-color: #fff;
+    height: 4rem;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+} 
+
+.nav--center {
+    width: 90vw;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav--center h4 {
+    color: #645cff;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.nav__links {
+    display: flex;
+}
+
+nav a {
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: #141233;
+    letter-spacing: 2px;
+    margin-right: 1rem;
+    transition: 0.3s ease-in-out all;
+}
+
+
+nav a:hover {
+    color: #645cff;
+}
+
+/* Container */
+main {
+    height: calc(100vh - 4rem);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h2 {
+    background-color: #111;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+.color {
+    color: #645cff;
+}
+
+.btn-hero {
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #111;
+    letter-spacing: 0.25rem;
+    font-weight: bold;
+    border: 2px solid #111;
+    padding: 0.7rem 1.25rem;
+}
+
+.btn-hero:hover {
+    color: #fff;
+    background-color: #111;
+}
